@@ -1,0 +1,12 @@
+The `encpoly` package is a Python 3 library for fast, Pythonic manipulation of [encoded polylines][].
+
+```python
+>>> from encpoly import encode, decode
+>>> coords = ((38.5, -120.2), (40.7, -120.95), (43.252, -126.453))
+>>> encode(coords)
+'_p~iF~ps|U_ulLnnqC_mqNvxq`@'
+>>> tuple(decode("_p~iF~ps|U_ulLnnqC_mqNvxq`@"))
+([38.5, -120.2], [40.7, -120.95], [43.252, -126.453])
+```
+
+  [encoded polylines]: https://developers.google.com/maps/documentation/utilities/polylinealgorithm
