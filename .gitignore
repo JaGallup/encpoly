@@ -1,5 +1,6 @@
 .DS_Store
 __pycache__/
+pip-wheel-metadata/
 *.egg-info/
 .cache
 build/

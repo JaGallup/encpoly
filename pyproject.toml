@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "encpoly"
+version = "0.1.0-dev"
+description = "Library for encoding/decoding geographic coordinates using Google's Encoded Polyline Algorithm"
+authors = ["Matt Riggott <matt.riggott@gmail.com>"]
+readme = "README.md"
+license = "GPL-3.0"
+repository = "https://github.com/JaGallup/encpoly"
+packages = [
+    { include = "encpoly", from = "src" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+
+[tool.poetry.dependencies]
+python = "^3.4"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.0"
+pytest = "^3.4"
+pytest-cov = "^2.5"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
