@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.egg-info/
+.cache
+build/
+dist/
+.tox
+.coverage
+htmlcov
+docs/_build
