@@ -10,3 +10,5 @@ before_install:
 install:
   - poetry install --verbose
 script: tox
+after_success:
+  - codecov

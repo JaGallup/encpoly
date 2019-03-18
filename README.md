@@ -1,6 +1,7 @@
 The `encpoly` package is a Python 3 library for fast, Pythonic manipulation of [encoded polylines][].
 
 [![Build status][tci]][tcl]
+[![Code coverage report][cci]][ccl]
 
 ```python
 >>> from encpoly import encode, decode
@@ -14,3 +15,5 @@ The `encpoly` package is a Python 3 library for fast, Pythonic manipulation of [
   [encoded polylines]: https://developers.google.com/maps/documentation/utilities/polylinealgorithm
   [tci]: https://travis-ci.org/JaGallup/encpoly.svg?branch=master
   [tcl]: https://travis-ci.org/JaGallup/encpoly
+  [cci]: https://codecov.io/gh/JaGallup/encpoly/branch/master/graph/badge.svg
+  [ccl]: https://codecov.io/gh/JaGallup/encpoly
