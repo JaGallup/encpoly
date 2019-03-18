@@ -4,18 +4,6 @@ from operator import sub
 
 
 def polyline_round(number):
-    """
-    >>> polyline_round(0)
-    0
-    >>> polyline_round(1)
-    1
-    >>> polyline_round(-1)
-    -1
-    >>> polyline_round(0.5)
-    1
-    >>> polyline_round(-0.5)
-    -1
-    """
     if number > 0:
         return floor(number + 0.5)
     else:
