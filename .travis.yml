@@ -6,7 +6,7 @@ python:
   - "3.6"
   - "3.7"
 before_install:
-  - pip install poetry
+  - pip install poetry tox-travis
 install:
   - poetry install --verbose
 script: tox
