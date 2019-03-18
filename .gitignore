@@ -1,6 +1,7 @@
 .DS_Store
 __pycache__/
 pip-wheel-metadata/
+poetry.lock
 *.egg-info/
 .cache
 build/
