@@ -20,7 +20,7 @@ You can use Pip to install the [latest release][] from PyPi:
   [encoded polylines]: https://developers.google.com/maps/documentation/utilities/polylinealgorithm
   [tci]: https://travis-ci.org/JaGallup/encpoly.svg?branch=master
   [tcl]: https://travis-ci.org/JaGallup/encpoly
-  [cci]: https://codecov.io/gh/JaGallup/encpoly/branch/master/graph/badge.svg
+  [cci]: https://img.shields.io/codecov/c/github/JaGallup/encpoly.svg
   [ccl]: https://codecov.io/gh/JaGallup/encpoly
   [ppi]: https://img.shields.io/pypi/v/encpoly.svg
   [ppl]: https://pypi.org/project/encpoly/
