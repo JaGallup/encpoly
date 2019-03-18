@@ -6,6 +6,7 @@ authors = ["Matt Riggott <matt.riggott@gmail.com>"]
 readme = "README.md"
 license = "GPL-3.0"
 repository = "https://github.com/JaGallup/encpoly"
+documentation = "https://encpoly.readthedocs.io/"
 packages = [
     { include = "encpoly", from = "src" },
 ]
