@@ -55,7 +55,7 @@ def decode_coords(polyline):
             shift = 0
 
 
-def decode(polyline, precision=5):
+def decode(polyline, precision=None):
     if precision is None:
         precision = DEFAULT_PRECISION
     else:
