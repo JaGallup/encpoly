@@ -49,8 +49,7 @@ def decode_coords(polyline):
         coord |= (char & 0x1F) << shift
         shift += 5
         if char < 0x20:
-            coord >>= 1
-            yield ~coord if coord & 1 else coord
+            yield ~coord >> 1 if coord & 1 else coord >> 1
             coord = 0
             shift = 0
 
