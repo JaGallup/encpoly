@@ -4,10 +4,18 @@ from encpoly.codec import polyline_round
 
 def test_polyline_round():
     assert polyline_round(0) == 0
-    assert polyline_round(1) == 1
-    assert polyline_round(-1) == -1
+
     assert polyline_round(0.5) == 1
+    assert polyline_round(1) == 1
+    assert polyline_round(1.5) == 2
+    assert polyline_round(2.5) == 3
+    assert polyline_round(3.5) == 4
+
     assert polyline_round(-0.5) == -1
+    assert polyline_round(-1) == -1
+    assert polyline_round(-1.5) == -2
+    assert polyline_round(-2.5) == -3
+    assert polyline_round(-3.5) == -4
 
 
 def test_encode():
