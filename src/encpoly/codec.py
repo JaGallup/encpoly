@@ -3,6 +3,9 @@ from math import floor, ceil
 from operator import sub
 
 
+DEFAULT_PRECISION = 1e5
+
+
 def polyline_round(number):
     if number > 0:
         return floor(number + 0.5)
@@ -22,8 +25,11 @@ def encode_coord(coord, precision):
     return encoded_coord
 
 
-def encode(locations, precision=5):
-    precision = 10 ** precision
+def encode(locations, precision=None):
+    if precision is None:
+        precision = DEFAULT_PRECISION
+    else:
+        precision = 10 ** precision
     encoded_coords = []
     prev_location = (0, 0)
     for location in locations:
@@ -50,7 +56,10 @@ def decode_coords(polyline):
 
 
 def decode(polyline, precision=5):
-    precision = 10 ** precision
+    if precision is None:
+        precision = DEFAULT_PRECISION
+    else:
+        precision = 10 ** precision
     prev_location = (0, 0)
     i = decode_coords(polyline)
     for coord in i:
