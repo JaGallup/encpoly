@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "encpoly"
-version = "0.2.0"
+version = "0.3.0-dev"
 description = "Library for encoding/decoding geographic coordinates using Google's Encoded Polyline Algorithm"
 authors = ["Matt Riggott <matt.riggott@gmail.com>"]
 readme = "README.md"
