@@ -3,6 +3,14 @@ Introduction
 
 The encpoly package is a Python 3 library for encoding/decoding geographic coordinates using `Google's Encoded Polyline Algorithm`_. The package is `developed on GitHub`_ and contributions are welcome.
 
+Table of contents
+-----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   api
+
 Usage
 -----
 
