@@ -23,3 +23,4 @@ html_use_index = False
 html_domain_indices = False
 html_copy_source = False
 html_show_sphinx = False
+pygments_style = "lovelace"
