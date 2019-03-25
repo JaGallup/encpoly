@@ -2,6 +2,7 @@ version: 2
 python:
   install:
     - method: pip
+      path: .
     - requirements: docs/requirements.txt
 sphinx:
   builder: htmldir
