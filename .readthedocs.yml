@@ -1,6 +1,7 @@
 version: 2
 python:
-  pip_install: true
-requirements_file: docs/requirements.txt
+  install:
+    - method: pip
+      requirements: docs/requirements.txt
 sphinx:
   builder: htmldir
