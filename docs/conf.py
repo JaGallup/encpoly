@@ -2,7 +2,7 @@ import sphinx_rtd_theme
 
 
 project = "encpoly"
-copyright = "2019 Já hf"
+copyright = "2019 Já hf."
 
 master_doc = "index"
 exclude_patterns = ["_build", ".DS_Store"]
