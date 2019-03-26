@@ -13,7 +13,7 @@ environment:
 install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
   - "python -m pip install --disable-pip-version-check --user --upgrade pip"
-  - "curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py --yes --preview | python"
+  - "curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python - --yes --preview"
   - "SET PATH=%USERPROFILE%\\.poetry\\bin;%PATH%"
   - "poetry install --verbose"
 test_script:
