@@ -1,6 +1,12 @@
 Installation and usage
 ======================
 
+.. image:: https://img.shields.io/pypi/v/encpoly.svg
+   :target: https://pypi.org/project/encpoly/
+   :height: 20
+   :width: 78
+   :align: right
+
 The `latest encpoly release is available on PyPI`_, and you can install it using Pip_::
 
     pip install encpoly
