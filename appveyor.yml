@@ -1,0 +1,20 @@
+build: false
+environment:
+  matrix:
+    - PYTHON: "C:\\Python34"
+    - PYTHON: "C:\\Python34-x64"
+      DISTUTILS_USE_SDK: "1"
+    - PYTHON: "C:\\Python35"
+    - PYTHON: "C:\\Python35-x64"
+    - PYTHON: "C:\\Python36"
+    - PYTHON: "C:\\Python36-x64"
+    - PYTHON: "C:\\Python37"
+    - PYTHON: "C:\\Python37-x64"
+install:
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - "python -m pip install --disable-pip-version-check --user --upgrade pip"
+  - "curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py --yes --preview | python"
+  - "SET PATH=%USERPROFILE%\\.poetry\\bin;%PATH%"
+  - "poetry install --verbose"
+test_script:
+  - "poetry run pytest"
