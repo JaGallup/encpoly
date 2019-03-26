@@ -81,11 +81,33 @@ To install the package in `"editable mode"`_ you will need Poetry_, a tool for d
     $ cd encpoly
     $ poetry install
 
+Test suite
+~~~~~~~~~~
+
 Encpoly uses Pytest_ and Tox_ for testing. To run the tests locally, use::
 
     tox -e py37
 
 The example above runs tests against Python 3.7. You can also use other versions like ``py36`` and ``pypy3``.
+
+The test suite is run automatically when the master branch is pushed to GitHub. The tests are run using `Travis CI`_ (Linux) and Appveyor_ (Windows) for Python 3.4+ and PyPy 3.5. Code coverage is tracked using Codecov_.
+
+.. image:: https://travis-ci.org/JaGallup/encpoly.svg?branch=master
+   :alt: Build status on Travis CI
+   :target: https://travis-ci.org/JaGallup/encpoly
+   :height: 20
+   :width: 90
+
+.. image:: https://ci.appveyor.com/api/projects/status/6lu5j29y6e22dken?svg=true
+   :alt: Build status on Appveyor
+   :target: https://ci.appveyor.com/project/flother/encpoly
+   :height: 20
+   :width: 106
+
+.. image:: https://codecov.io/gh/JaGallup/encpoly/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/JaGallup/encpoly
+   :height: 20
+   :width: 122
 
 
 .. _latest encpoly release is available on PyPI: https://pypi.org/project/encpoly/
@@ -100,3 +122,6 @@ The example above runs tests against Python 3.7. You can also use other versions
 .. _"editable mode": https://pip.pypa.io/en/latest/reference/pip_install/#editable-installs
 .. _Pytest: https://docs.pytest.org/
 .. _Tox: https://tox.readthedocs.io/
+.. _Travis CI: https://travis-ci.org/JaGallup/encpoly
+.. _Appveyor: https://ci.appveyor.com/project/flother/encpoly
+.. _Codecov: https://codecov.io/gh/JaGallup/encpoly
